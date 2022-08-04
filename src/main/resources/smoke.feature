@@ -16,7 +16,7 @@ Feature: Smoke
 
 
 
-  Scenario Outline: Check properties found are '5,268' when the city is 'Paris' and adults are '3'
+  Scenario Outline: Check properties found are '5,241' when the city is 'Paris' and adults are '3'
     Given User opens '<homePage>' page
     And User сhooses a city '<city>'
     And User chooses three adults
@@ -24,7 +24,7 @@ Feature: Smoke
     Then User checks that the properties found equal to '<amount>'
     Examples:
     | homePage                 | city     | amount|
-    | https://www.booking.com/ | Paris    | 5,268 |
+    | https://www.booking.com/ | Paris    | 5,241 |
 
 
 

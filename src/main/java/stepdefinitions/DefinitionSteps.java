@@ -69,7 +69,8 @@ public class DefinitionSteps {
         generatePage.waitForPageLoadComplete(DEFAULT_TIMEOUT);
         Assert.assertTrue(generatePage.getCheckInDate().contains("Thursday 1 December 2022"));
         Assert.assertTrue(generatePage.getCheckOutDate().contains("Friday 30 December 2022"));
-        homePage.waitForAjaxToComplete(DEFAULT_TIMEOUT);
+        generatePage.waitForPageLoadComplete(DEFAULT_TIMEOUT);
+        generatePage.waitForAjaxToComplete(DEFAULT_TIMEOUT);
         Assert.assertEquals(26, generatePage.getSearchResultsPageList().size());
     }
 
